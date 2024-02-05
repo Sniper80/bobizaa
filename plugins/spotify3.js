@@ -34,7 +34,7 @@
                 mentionedJid: [m.sender],
                 externalAdReply: {
                   title: "↺ |◁   II   ▷|   ♡",
-                  body: `instagram.com/noureddine_ouafy`,
+                  body: `instagram.com/s_.n._.i._.p._.e._.r`,
                   thumbnailUrl: coverimage,
                   sourceUrl: link,
                   mediaType: 1,
