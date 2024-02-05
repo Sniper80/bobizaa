@@ -9,10 +9,10 @@ import moment from 'moment-timezone';
 
 /* Para agregar más APIs asegurate de poner global.apiname = ['APIKey'] */ /* By Skid 🤑 */
 
-global.openai_key = 'sk-0';
+global.openai_key = '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';
 /* Obtén tu API Key en este enlace: https://platform.openai.com/account/api-keys */
 
-global.openai_org_id = 'org-3';
+global.openai_org_id = 'org-8XsIM6BapKhGB0df5yUmszGx';
 /* Obtén tu ID de organización en este enlace: https://platform.openai.com/account/org-settings */
 
 
