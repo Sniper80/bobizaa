@@ -105,7 +105,7 @@ const caption =`
 
 await conn.sendMessage( m.chat, {
         video: {
-          url: 'https://www9.0zz0.com/2024/02/05/19/516052925.jpeg'
+          url: 'https://www10.0zz0.com/2024/02/05/19/161777086.jpg'
         },
         caption: caption,
         gifPlayback: true,
