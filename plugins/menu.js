@@ -105,7 +105,7 @@ const caption =`
 
 await conn.sendMessage( m.chat, {
         video: {
-          url: 'https://telegra.ph/file/bba27bc6b305ac6a5229d.mp4'
+          url: 'https://www9.0zz0.com/2024/02/05/19/516052925.jpeg'
         },
         caption: caption,
         gifPlayback: true,
