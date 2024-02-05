@@ -4,7 +4,7 @@ import cheerio from 'cheerio';
 import {mediafiredl} from '@bochilteam/scraper';
 
 const handler = async (m, {conn, args, usedPrefix, command}) => {
-  if (!args[0]) throw `التحميل من منصة ميديافاير مثال:\n*mediafire2* https://www.mediafire.com/file/ttuenrfdra2onw1/SCRIP_BOT_jaga_grup_pairing.zip/`;
+  if (!args[0]) throw `التحميل من منصة ميديافاير مثال:\n*mediafire2* https://www.mediafire.com/file/ttuenrfdra2onw1/SCRIP_jaga_grup_pairing.zip/`;
   try {
     const resEX = await mediafiredl(args[0]);
     const captionES = `_*التحميل من ميديافاير*_\n
