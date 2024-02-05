@@ -35,7 +35,7 @@ export async function handler(chatUpdate) {
     return;
   }
   if (global.db.data == null) await global.loadDatabase();
-  /* Creditos a Otosaka (https://wa.me/51993966345) */
+  /* Creditos a Otosaka (https://wa.me/201020182886) */
 
   if (global.chatgpt.data === null) await global.loadChatgptDB();
 
@@ -52,7 +52,7 @@ export async function handler(chatUpdate) {
     try {
       // TODO: use loop to insert data instead of this
       const user = global.db.data.users[m.sender];
-      /* Creditos a Otosaka (https://wa.me/51993966345) */
+      /* Creditos a Otosaka (https://wa.me/201020182886) */
 
       const chatgptUser = global.chatgpt.data.users[m.sender];
       if (typeof chatgptUser !== 'object') {
@@ -1183,7 +1183,7 @@ const messageText = `
  ❰ ⚠️ ❱ *USER BANNED!* ❰ ⚠️ ❱
 —◉ *Notice ${messageNumber}/3 (Total: 3)*
 —◉ Reason ${user.bannedReason ? `\n*:* ${user.bannedReason}` : '*Reason:* Unspecified'}
-—◉ *إذا كنت تعتقد أن هذا خطأ ولديك دليل، فيمكنك الاتصال بمالك الروبوت لاستئناف التعليق.* —◉ *التواصل مع مالكه:* wa.me/212605784394
+—◉ *إذا كنت تعتقد أن هذا خطأ ولديك دليل، فيمكنك الاتصال بمالك الروبوت لاستئناف التعليق.* —◉ *التواصل مع مالكه:* wa.me/201020182886
 ╚═════════════════════╝
                `.trim();
               m.reply(messageText);
@@ -1499,8 +1499,8 @@ export async function callUpdate(callUpdate) {
         const callmsg = await mconn.conn.reply(nk.from, `Hello *@${nk.from.split('@')[0]}*, las ${nk.isVideo ? 'video calls' : 'calls'} are not allowed, you will be blocked.\n-\n If you accidentally called contact my creator to unblock you!`, false, {mentions: [nk.from]});
         // let data = global.owner.filter(([id, isCreator]) => id && isCreator)
         // await this.sendContact(nk.from, data.map(([id, name]) => [id, name]), false, { quoted: callmsg })
-        const vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;BOBIZA;;;\nFN:BOT\nORG:NOUREDDINE\nTITLE:\nitem1.TEL;waid=212605784394:212605784394\nitem1.X-ABLabel:noureddine\nX-WA-BIZ-DESCRIPTION:[❗] contact noureddine ouafy\nEND:VCARD`;
-        await mconn.conn.sendMessage(nk.from, {contacts: {displayName: 'BOBIZA', contacts: [{vcard}]}}, {quoted: callmsg});
+        const vcard = `BEGIN:VCARD\nVERSION:3.0\nN:;SNIPER;;;\nFN:BOT\nORG:𝐒𝐍𝐈𝐏𝐄𝐑 ༄❤️\nTITLE:\nitem1.TEL;waid=201020182886:201020182886\nitem1.X-ABLabel:𝐒𝐍𝐈𝐏𝐄𝐑 ༄❤️\nX-WA-BIZ-DESCRIPTION:[❗] contact 𝐒𝐍𝐈𝐏𝐄𝐑 ༄❤️\nEND:VCARD`;
+        await mconn.conn.sendMessage(nk.from, {contacts: {displayName: '𝐒𝐍𝐈𝐏𝐄𝐑 ༄❤️', contacts: [{vcard}]}}, {quoted: callmsg});
         await mconn.conn.updateBlockStatus(nk.from, 'block');
       }
     }
@@ -1547,7 +1547,7 @@ global.dfail = (type, m, conn) => {
     restrict: '*[ ℹ️ ] This command was disabled by the bot owner.*',
   }[type];
   const aa = {quoted: m, userJid: conn.user.jid};
-  const prep = generateWAMessageFromContent(m.chat, {extendedTextMessage: {text: msg, contextInfo: {externalAdReply: {title: '*[ ⚠ ] Warning*', body: 'BOBIZABOT', thumbnail: imagen1, sourceUrl: 'https://instagram.com/noureddine_ouafy'}}}}, aa);
+  const prep = generateWAMessageFromContent(m.chat, {extendedTextMessage: {text: msg, contextInfo: {externalAdReply: {title: '*[ ⚠ ] Warning*', body: '𝐒𝐍𝐈𝐏𝐄𝐑 ༄❤️', thumbnail: imagen1, sourceUrl: 'https://instagram.com/s_.n._.i._.p._.e._.r'}}}}, aa);
   if (msg) return conn.relayMessage(m.chat, prep.message, {messageId: prep.key.id});
 };
 
