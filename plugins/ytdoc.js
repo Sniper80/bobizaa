@@ -6,7 +6,7 @@ let handler = async (m, {conn, args, isPrems, isOwner}) => {
     return `${Math.floor(Math.random() * 10000)}${ext}`;
   };
   if (args.length === 0) {
-    m.reply(`*هذا الامر خاص بتحميل فيديوات اليوتوب على شكل document*\nسوف اعطيك مثال تكتب هكذا \n\n*.ytdoc* https://youtube.com/watch?v=JhaYzYCLiCw`);
+    m.reply(`*هذا الامر خاص بتحميل فيديوات اليوتوب على شكل document*\nسوف اعطيك مثال تكتب هكذا \n\n*.ytdoc* https://youtu.be/Hm6VKolkQPs?si=nsr7plvdXANA9FBE`);
     return;
   }
   try {
